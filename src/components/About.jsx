@@ -4,7 +4,7 @@ import AboutImg from "../assets/img/about.svg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={5}>
