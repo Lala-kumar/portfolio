@@ -186,8 +186,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: black;
 }
 .banner img {
+  margin-top: 20px;
   animation: updown 3s linear infinite;
+  height: 300px;
 }
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -220,6 +223,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about span {
   color: aqua;
+}
+
+.about svg {
+  height: 200px;
 }
 
 @keyframes updown {
@@ -272,4 +279,93 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+/************ projets Css ************/
+.projects {
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects .projectTitle {
+  text-align: center;
+  color: #3e497a;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.projectList {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .projectList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projectList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projectList {
+    width: 100%;
+  }
+  .projectItem {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/************ projet Css ************/
+
+.project {
+  width: 280px;
+  height: 300px;
+  margin: 20px 20px 20px 20px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 3px 15px aqua;
+}
+.project:hover {
+  box-shadow: 0px 10px 25px aqua;
+  transition: 0.3s ease-in;
+  /* cursor: pointer; */
+}
+.project h1 {
+  margin-top: 5px;
+  color: #3e497a;
+  font-size: 30px;
+}
+.project img {
+  width: 260px;
+  border-radius: 10px;
+}
+
+.project button {
+  color: #fff;
+  box-shadow: 0px 1px 5px aqua;
+  height: 30px;
+  width: 60px;
+}
+.project button:hover {
+  box-shadow: 0px 5px 15px aqua;
+  transition: 0.3s ease-in;
+  cursor: pointer;
 }

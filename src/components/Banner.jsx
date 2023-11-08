@@ -59,7 +59,7 @@ const Banner = () => {
             </Button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={HeaderImg} alt="Header Image" width={550} />
+            <img src={HeaderImg} alt="Header Image" />
           </Col>
         </Row>
       </Container>

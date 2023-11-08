@@ -19,7 +19,7 @@ const Skills = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -35,7 +35,7 @@ const Skills = () => {
             <Col>
               <div className="skills-bx">
                 <h2>Skills</h2>
-                <p>Skills that i have a grasp knowledge</p>
+                <p>Here are some of my skills on which I have been working on for the past 2 years.</p>
                 <Carousel
                   responsive={responsive}
                   infinite={true}
