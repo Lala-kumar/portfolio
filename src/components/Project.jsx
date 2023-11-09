@@ -32,12 +32,6 @@ const Project = () => {
   return (
     <section className="projects" id="project">
       <h1>Projects</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-        eligendi sed nihil cupiditate minus fugiat rerum assumenda voluptas quod
-        culpa, illo expedita maxime aspernatur sequi sunt error nostrum magnam
-        quidem.
-      </p>
 
       <div className="projectList">
         {projects.map((project, index) => {

@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About/>
       <Skills/>
       <Project/>
+      <Contact/>
     </>
   );
 };
