@@ -49,7 +49,8 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.75);
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  background-color: black;
 }
 
 nav.navbar.scrolled {
@@ -126,7 +127,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 100px 0 100px 0;
-  background-image: url("./assets/img/banner-bg.png");
+  /* background-image: url("./assets/img/banner-bg.png"); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,6 +145,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+}
+.banner a {
+  text-decoration: none;
 }
 .banner h1 {
   font-size: 45px;
@@ -333,6 +337,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ projet Css ************/
 
 .project {
+  border-radius: 10px;
   width: 280px;
   height: 300px;
   margin: 20px 20px 20px 20px;
@@ -341,7 +346,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px 3px 15px aqua;
+  box-shadow: 0px 2px 6px aqua;
 }
 .project:hover {
   box-shadow: 0px 10px 25px aqua;
@@ -361,6 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project button {
   color: #fff;
   box-shadow: 0px 1px 5px aqua;
+  border-radius: 10px;
   height: 30px;
   width: 60px;
 }
@@ -370,17 +376,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
 }
 
-
 /************ contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 60px 0 100px 0;
+  background: linear-gradient(90.21deg, #367eaa -5.91%, #3e77ea 111.58%);
+  padding: 60px 0 20px 0;
 }
 .contact img {
   width: 92%;
 }
 .contact h2 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -394,7 +399,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
@@ -417,9 +422,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   background-color: #fff;
-  padding: 12px 40px;
-  font-size: 18px;
-  margin-top: 25px;
+  padding: 10px 30px;
+  font-size: 16px;
+  margin-left: 215px;
   border-radius: 10px;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -435,7 +440,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #4a2fbd;
+  background: aqua;
   width: 0;
   height: 100%;
   position: absolute;
@@ -448,4 +453,71 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
   border-radius: 10px;
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url("./assets/img/footer-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer img {
+  width: 26%;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #b8b8b8;
+  margin: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  /* margin: 10px; */
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+}
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: aqua;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(1);
+  box-shadow: 0px 5px 15px aqua;
+}
+.social-icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
 }

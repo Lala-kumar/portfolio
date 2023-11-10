@@ -54,9 +54,11 @@ const Banner = () => {
             <h1>
               {"Hii I'm Lala Kumar"} <span className="wrap">{text}</span>
             </h1>
-            <Button>
-              Let's Connect <ArrowRightCircle size={20} />
-            </Button>
+            <a href="#contact">
+              <Button>
+                Let's Connect <ArrowRightCircle size={20} />
+              </Button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={HeaderImg} alt="Header Image" />

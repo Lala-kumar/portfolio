@@ -3,7 +3,18 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
+
+import react from "../assets/img/react.svg";
+import bootstrap from "../assets/img/bootstrap.svg";
+import tailwind from "../assets/img/tailwind.svg";
+import js from "../assets/img/javascript.svg";
+import html from "../assets/img/html.svg";
+import css from "../assets/img/css.svg";
+import firebase from "../assets/img/firebase.svg";
+import git from "../assets/img/git.svg";
+import redux from "../assets/img/redux.svg";
+import github from "../assets/img/nav-icon4.svg";
+
 import colorSharp from "../assets/img/color-sharp.png";
 
 const Skills = () => {
@@ -35,50 +46,53 @@ const Skills = () => {
             <Col>
               <div className="skills-bx">
                 <h2>Skills</h2>
-                <p>Here are some of my skills on which I have been working on for the past 2 years.</p>
+                <p>
+                  Here are some of my skills on which I have been working on for
+                  the past 2 years.
+                </p>
                 <Carousel
                   responsive={responsive}
                   infinite={true}
                   className="skills-slider"
                 >
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={react} alt="react" />
                     <h4>React JS</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={js} alt="js" />
                     <h4>javscript</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={bootstrap} alt="bootstrap" />
                     <h4>Bootstrap</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={tailwind} alt="tailwind" />
                     <h4>Tailwind</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={html} alt="html" />
                     <h4>HTML</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={css} alt="css" />
                     <h4>CSS</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={git} alt="git" />
                     <h4>Git</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={github} alt="github" />
                     <h4>GitHub</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={redux} alt="redux" />
                     <h4>Redux</h4>
                   </div>
                   <div className="item">
-                    <img src={meter1} alt="" />
+                    <img src={firebase} alt="firebase" />
                     <h4>Firebase</h4>
                   </div>
                 </Carousel>

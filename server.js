@@ -1,5 +1,5 @@
-import express, { Router, json } from "express";
 const router = Router();
+import express, { Router, json } from "express";
 import cors from "cors";
 import { createTransport } from "nodemailer";
 
@@ -13,10 +13,10 @@ console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
     user: "lalakumar4099@gmail.com",
-    pass: "cgcgmivbsluvhcdx"
+    pass: "cgcgmivbsluvhcdx",
   },
 });
 
