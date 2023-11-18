@@ -22,7 +22,7 @@ export const Footer = () => {
           <img src={navIcon3} alt="Instagram" />
         </a>
       </div>
-      <p>Copyright 2023 © Lala Kumar </p>
+      <p className="text">Copyright 2023 © Lala Kumar </p>
     </footer>
   );
 };
