@@ -26,6 +26,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 
 body {
   font-weight: 400;
@@ -348,6 +353,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column;
   box-shadow: 0px 2px 6px aqua;
 }
+@media only screen and (max-width: 340px) {
+  .project {
+    width: 260px;
+  }
+}
+
 .project:hover {
   box-shadow: 0px 10px 25px aqua;
   transition: 0.3s ease-in;
