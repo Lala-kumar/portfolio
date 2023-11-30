@@ -12,30 +12,31 @@ const Project = () => {
       description:
         "An online marketplace offering a diverse range of products, providing seamless shopping experiences, and secure transactions for customers worldwide.",
       imgUrl: projImg1,
-      link: "https://ecommerce-gamma-silk.vercel.app/"
+      link: "https://ecommerce-gamma-silk.vercel.app/",
     },
     {
       title: "Food Order App",
       description:
         "Your go-to destination for convenient online food ordering, delivering diverse flavors to your doorstep with just a click.",
       imgUrl: projImg2,
-      link: "https://food-order-topaz.vercel.app/"
+      link: "https://food-order-topaz.vercel.app/",
     },
     {
       title: "Expense Tracker",
       description:
         "Effortlessly manage your finances on the go with our user-friendly expense tracker app.",
       imgUrl: projImg3,
-      link:"https://expense-tracker-lala-kumar.vercel.app/"
+      link: "https://expense-tracker-lala-kumar.vercel.app/",
     },
   ];
   return (
     <section className="projects" id="project">
       <h1>Projects</h1>
-
+      <br />
+      <br />
       <div className="projectList">
         {projects.map((project, index) => {
-          return <ProjectCard key={index} {...project}  />;
+          return <ProjectCard key={index} {...project} />;
         })}
       </div>
     </section>

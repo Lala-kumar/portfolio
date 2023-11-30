@@ -46,10 +46,10 @@ const Skills = () => {
             <Col>
               <div className="skills-bx">
                 <h2>Skills</h2>
-                <p>
-                  Here are some of my skills on which I have been working on for
-                  the past 2 years.
-                </p>
+                <br />
+                <br />
+                <br />
+                <br />
                 <Carousel
                   responsive={responsive}
                   infinite={true}

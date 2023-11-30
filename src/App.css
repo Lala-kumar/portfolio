@@ -26,10 +26,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
 }
 
 body {
@@ -197,7 +195,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   margin-top: 20px;
   animation: updown 3s linear infinite;
-  height: 300px;
+  height: 250px;
 }
 
 @keyframes updown {
@@ -292,8 +290,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ projets Css ************/
 .projects {
-  margin: 10px;
-  padding: 20px;
+  /* margin: 10px; */
+  padding: 10px;
   width: 100%;
   height: auto;
   display: flex;
@@ -301,6 +299,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   align-items: center;
   flex-direction: column;
+}
+.projects h1 {
+  font-size: 45px;
+  font-weight: 700;
 }
 .projects .projectTitle {
   text-align: center;
@@ -391,6 +393,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #367eaa -5.91%, #3e77ea 111.58%);
   padding: 60px 0 20px 0;
+  text-align: center;
 }
 .contact img {
   width: 82%;
