@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Container, Nav, Navbar, Image, Button } from "react-bootstrap";
+import { Container, Nav, Navbar, Image } from "react-bootstrap";
 
 import logo from "../assets/img/logo.jpg";
 
@@ -32,7 +32,7 @@ const NavBar = () => {
             <Image src={logo} roundedCircle height={50} width={50} />
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" >
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
 
